@@ -24,9 +24,7 @@ import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/share'
 import 'rxjs/add/operator/takeUntil'
 import 'rxjs/add/operator/withLatestFrom'
-function log(label: string) {
-  return console.log.bind(console, label)
-}
+
 export type EventHandlerProps<E> = EventHandlerProp<E> & Partial<EventProp<E>>
 
 export interface EventHandlerProp<E> {
